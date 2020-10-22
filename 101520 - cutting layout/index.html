@@ -98,11 +98,11 @@
       <img src="bonfire.png" alt="">
       <h2 class="font-weight-bolder pt-3 pb-5">Explore Destinations<br>& Activities</h2>
       <div class="row">
-        <div class="col-lg-3 activity-box p-3">
+        <div class="col-lg-3 activity-box">
           <div class="activity-box-inner">
             <div class="box-header-container">
-              <img src="bonfire.png" alt="">
-              <p>$36/night</p>
+              <img class="image-in-box" src="bonfire.png" alt="">
+              <p class="price-in-box">$36/night</p>
             </div>
             <div class="box-content-container">
               <p>Trickle Creek Ranch</p>
@@ -114,8 +114,8 @@
         <div class="col-lg-3 activity-box">
           <div class="activity-box-inner">
             <div class="box-header-container">
-              <img src="bonfire.png" alt="">
-              <p>$36/night</p>
+              <img class="image-in-box" src="bonfire.png" alt="">
+              <p class="price-in-box">$36/night</p>
             </div>
             <div class="box-content-container">
               <p>Trickle Creek Ranch</p>
@@ -127,8 +127,8 @@
         <div class="col-lg-3 activity-box">
           <div class="activity-box-inner">
             <div class="box-header-container">
-              <img src="bonfire.png" alt="">
-              <p>$36/night</p>
+              <img class="image-in-box" src="bonfire.png" alt="">
+              <p class="price-in-box">$36/night</p>
             </div>
             <div class="box-content-container">
               <p>Trickle Creek Ranch</p>
@@ -140,8 +140,8 @@
         <div class="col-lg-3 activity-box">
           <div class="activity-box-inner">
             <div class="box-header-container">
-              <img src="bonfire.png" alt="">
-              <p>$36/night</p>
+              <img class="image-in-box" src="bonfire.png" alt="">
+              <p class="price-in-box">$36/night</p>
             </div>
             <div class="box-content-container">
               <p>Trickle Creek Ranch</p>
@@ -153,8 +153,8 @@
         <div class="col-lg-3 activity-box">
           <div class="activity-box-inner">
             <div class="box-header-container">
-              <img src="bonfire.png" alt="">
-              <p>$36/night</p>
+              <img class="image-in-box" src="bonfire.png" alt="">
+              <p class="price-in-box">$36/night</p>
             </div>
             <div class="box-content-container">
               <p>Trickle Creek Ranch</p>
@@ -166,8 +166,8 @@
         <div class="col-lg-3 activity-box">
           <div class="activity-box-inner">
             <div class="box-header-container">
-              <img src="bonfire.png" alt="">
-              <p>$36/night</p>
+              <img class="image-in-box" src="bonfire.png" alt="">
+              <p class="price-in-box">$36/night</p>
             </div>
             <div class="box-content-container">
               <p>Trickle Creek Ranch</p>
@@ -179,8 +179,8 @@
         <div class="col-lg-3 activity-box">
           <div class="activity-box-inner">
             <div class="box-header-container">
-              <img src="bonfire.png" alt="">
-              <p>$36/night</p>
+              <img class="image-in-box" src="bonfire.png" alt="">
+              <p class="price-in-box">$36/night</p>
             </div>
             <div class="box-content-container">
               <p>Trickle Creek Ranch</p>
@@ -192,8 +192,8 @@
         <div class="col-lg-3 activity-box">
           <div class="activity-box-inner">
             <div class="box-header-container">
-              <img src="bonfire.png" alt="">
-              <p>$36/night</p>
+              <img class="image-in-box" src="bonfire.png" alt="">
+              <p class="price-in-box">$36/night</p>
             </div>
             <div class="box-content-container">
               <p>Trickle Creek Ranch</p>
@@ -333,9 +333,13 @@
     }
 
 
+    .activity-box {
+      margin-bottom:30px;
+    }
+
     .activity-box-inner {
       background: #fff;
-       padding:10px
+      padding: 10px;
     }
 
     .box-header-container {
@@ -344,6 +348,33 @@
       background-position: center;
       background-repeat: no-repeat;
       margin: 15px;
+      position:relative;
+      height:150px;
+      border-radius:15px;
+    }
+
+    .price-in-box {  
+      color: #e76f51;
+    background-color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    width: 120px;
+    margin: 0 auto;
+    }
+
+    .image-in-box {
+      position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px;
     }
   </style>
 
